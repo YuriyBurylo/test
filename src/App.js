@@ -11,7 +11,7 @@ const [toggle, setShow] = useState(false);
       <div>
         {toggle ? <Name/> : <Picture/>}
       </div>
-      <button onClick={() => setShow(!toggle)}>Toggle</button>
+      <button onClick={() => setShow(!toggle)}>{toggle ? "Show me Photo" : "Show me Name"}Toggle</button>
     </div>
   );
 }
